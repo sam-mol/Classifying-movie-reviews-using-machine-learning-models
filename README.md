@@ -1,15 +1,13 @@
-IMDB dataset having 50K movie reviews for natural language processing or Text analytics.
-This is a dataset for binary sentiment classification containing substantially more data than previous benchmark datasets. We provide a set of 25,000 highly polar movie reviews for training and 25,000 for testing. So, predict the number of positive and negative reviews using either classification or deep learning algorithms.
-For more dataset information, please go through the following link,
-http://ai.stanford.edu/~amaas/data/sentiment/
+Binary classification, or two-class classification, is one of the most common problems in data science. In this project, I will classify movie reviews as positive or negative based on the text content of the reviews by training deep learning models.
+I will be using Internet Movie Database (IMDB). IMDB dataset has 50,000 highly polarized movie reviews. The reviews are split into 25,000 reviews for training and 25,000 reviews for testing, each dataset containing 50% positive and 50% negative reviews. 
+In this project, I will use IMDB dataset that comes with Keras datasets, where it has already been partially preprocessed by turning sequence of words into sequence of integers, where each integer corresponds to a specific word in a predefined dictionary. But we still need to do a fair amount of data preprocessing, we can not feed sequence of integers into deep learning models since the sequences are all of different lengths; we need to turn the sequences into equal size tensors to feed them into a deep learning model. 
+If you want to preprocess the raw text input from scratch, you can access the data from the following link, http://ai.stanford.edu/~amaas/data/sentiment/. 
 
-The handwritten digits recognition with MNIST dataset is the “Hello World” problem in the fields of deep learning models. It is an amazing project to get started with in order to understand the fundamental processes involved in a typical deep learning model development.
-Application of Convolutional Neural Network models to MNIST dataset was one of the first successful applications of deep neural networks to "real world" data. Here I implemented a neural network model using deep learning framework Keras. Keras is a go-to tool to build deep learning models. I also used Numpy and Matplotlib libraries from PyData ecosystem (Python for data science) to clean and visualize the data.
+I will use a deep learning framework Keras to implemented a model. Keras is a go-to tool to build deep learning models. 
 
 Here are the steps that comprised the project:
-
-Download the data and split the data into training and testing sets.
-Clean the data and transform the data into a format that can be accepted by a model.
+Download the data that has already been split into training and testing sets.
+Further clean the data and transform the data into a format that can be accepted by a model.
 Build a model.
 Train the model using the training dataset and track the model’s performance.
 Adjust hyperparameters if needed and train the model again.
