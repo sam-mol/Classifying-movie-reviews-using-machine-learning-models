@@ -13,3 +13,6 @@ Train the model using the training dataset and track the model’s performance.
 Adjust hyperparameters if needed and train the model again.
 Test the model on the test set.
 Report the findings.
+
+References:
+Keras is well described by its creator François Chollet in his book "Deep Learning with Python". The mechanics of how to preprocess the IMDB dataset to transform the sequences of words into sequences of integers can also be found in the book. 
